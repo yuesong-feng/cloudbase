@@ -1,0 +1,49 @@
+.card {
+  width: 95%;
+  margin: 15px auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+
+.cardImg{
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+}
+.cardTitle{
+  color: white;
+  font-size: large;
+  height: 15%;
+  margin: 2% 5% 0 5%;
+}
+.cardDescription{
+  color: white;
+  height: 10%;
+  margin: 0 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: 220px;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    height: 270px;
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .card {
+    height: 320px;
+    max-width: 700px;
+  }
+}

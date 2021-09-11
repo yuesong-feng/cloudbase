@@ -1,0 +1,26 @@
+{
+  "envId": "{{env.ENV_ID}}",
+  "framework": {
+    "name": "cloudbase",
+    "plugins": {
+      "webview": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "installCommand": "cd webview && npm install --prefer-offline --no-audit --progress=false",
+          "buildCommand": "cd webview && npm run build",
+          "outputPath": "./webview/dist",
+          "cloudPath": "/"
+        }
+      },
+      "api": {
+        "use": "@cloudbase/framework-plugin-node",
+        "inputs": {
+          "name": "api",
+          "entry": "app.js",
+          "projectPath": "./api",
+          "path": "/api"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.vscode/
+webview/.cache/
+webview/dist/
+webview/node_modules/
+.DS_Store
+
